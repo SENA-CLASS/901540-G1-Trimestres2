@@ -33,12 +33,11 @@ public class Ejemplo4 {
                         System.out.println("la letra es d");
                     } else {
                         System.out.println("no reconosco la letra");
-                        
+
                     }
                 }
             }
         }
-
     }
 
 }
