@@ -19,6 +19,11 @@ public final class PerroHembra extends Perro{
     public void orinar() {
         System.out.println("orino agachada");
     }
+
+    @Override
+    public void morir() {
+        System.out.println("morir");
+    }
     
     
 }

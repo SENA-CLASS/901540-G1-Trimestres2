@@ -10,6 +10,9 @@ package edu.co.sena.generalizacion1;
  * @author hernando
  */
 public abstract class Perro extends Mamifero{
+    
+    public static final int PATAS =4;
+    
     private String organoReproductor;
     
     public void orinar(){

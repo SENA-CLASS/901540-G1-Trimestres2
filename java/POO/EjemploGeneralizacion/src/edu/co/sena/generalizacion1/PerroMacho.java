@@ -10,5 +10,10 @@ package edu.co.sena.generalizacion1;
  * @author hernando
  */
 public class PerroMacho extends Perro{
+
+    @Override
+    public void morir() {
+        System.out.println("mori"); 
+    }
     
 }

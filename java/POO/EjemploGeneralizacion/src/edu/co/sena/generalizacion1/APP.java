@@ -33,6 +33,7 @@ public class APP {
         perrito2.orinar();
         perrito2.parto();
         
+        System.out.println(Perro.PATAS);
     }
     
 }
