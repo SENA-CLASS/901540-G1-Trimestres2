@@ -9,14 +9,14 @@ package edu.co.sena.generalizacion1;
  *
  * @author hernando
  */
-public abstract class Animal {
+public abstract class Animal{
     private double peso;
     
     public void nacer(){
         System.out.println("naci por parto");
     }
     
-    public abstract void morir();
+    public abstract void morir();//no tienen cuerpo
     
     public void alimentar(){
         System.out.println("comiendo");
