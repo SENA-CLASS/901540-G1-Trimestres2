@@ -18,6 +18,8 @@ public class EjemploFigurasGeometicas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        //creacion de objetos sin uso de interfaces
         CuadradoImpl fg1 = new CuadradoImpl(4, 5);
         System.out.println(fg1.getArea());
         System.out.println(fg1.getLadoA());
@@ -29,18 +31,19 @@ public class EjemploFigurasGeometicas {
         System.out.println(fg1.getLadoB());
         System.out.println(fg1.getPerimetro());
         
-        CuadradoImpl fg2 = new CuadradoImpl("44", "50.6");
+            CuadradoImpl fg2 = new CuadradoImpl("44", "50.6");
         System.out.println(fg2.getArea());
         System.out.println(fg2.getLadoA());
         System.out.println(fg2.getLadoB());
         System.out.println(fg2.getPerimetro());
         
-        
+        //creo el objeto a partir de la interface
         Cuadrado fg3 = new CuadradoImpl(3, 3);
         System.out.println(fg3.getLadoA());
         System.out.println(fg3.getLadoB());
         System.out.println(fg3.getArea());
         System.out.println(fg3.getPerimetro());
+        
         
     
     }
