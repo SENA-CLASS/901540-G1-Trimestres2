@@ -5,6 +5,9 @@
  */
 package edu.co.sena.contenida.ejemplo2;
 
+import java.math.MathContext;
+import java.util.ArrayList;
+
 /**
  *
  * @author hernando
@@ -27,6 +30,21 @@ public class APP {
         Mujer mujerNoEmbarazada = (Madre) mujercita;
         System.out.println(mujerNoEmbarazada);
         
+        
+        Madre.Feto fetico2 = new Madre().new Feto();
+        Madre.Feto fetico3 = mujercita.new Feto();
+        
+        Madre mamasita =new Madre();
+        System.out.println(mamasita);
+        
+        Hijo hijoto = mujercita.new Feto();
+        Hijo hijoto2 = new Madre().new Feto();
+        
+        
+        System.out.println(Math.E);
+            
+        
+        ArrayList
         
         
         
