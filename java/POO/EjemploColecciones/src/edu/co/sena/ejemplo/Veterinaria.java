@@ -12,8 +12,14 @@ import java.util.List;
  *
  * @author hernando
  */
-public class Veterinaria {
-    List<Perro> perros = new ArrayList<>();
+public class Veterinaria{
+    private List<Perro> perros;
+   
+
+    public Veterinaria() {
+       perros = new ArrayList();
+    }
+    
     
     
     public void hospitalizar(Perro perro){
@@ -21,19 +27,42 @@ public class Veterinaria {
     }
     
     public void darDeAlta(int numeroPerro){
-        if(numeroPerro<perros.size())
+        if(numeroPerro>=0 && numeroPerro<perros.size())
             perros.remove(numeroPerro);
         else
             System.out.println("perro selecccionado no exite para dar de alta");
     }
     
+    public void darDeAlta(Perro perro){
+        int indiceBorrar=-1, indice=0;
+        for (Perro listaPerros : perros) {
+            
+            if(listaPerros.compareTo(perro)==0){
+                System.out.println("doy de alta al perro en la posicion "+ indice);
+                indiceBorrar=indice;
+            }
+            indice++;
+        }
+        this.darDeAlta(indiceBorrar);
+    }
+    
     public void listarPerros(){
     
         for (Perro perro : perros) {
+        
+            System.out.println(perro.getIdPerro());
             System.out.println(perro.getNombre());
-            System.out.println(perro.getRaza());
+            
         }
     
+    }
+
+    public List<Perro> getPerros() {
+        return perros;
+    }
+
+    public void setPerros(List<Perro> perros) {
+        this.perros = perros;
     }
     
     
