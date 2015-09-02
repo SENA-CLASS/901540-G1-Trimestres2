@@ -16,7 +16,7 @@ public class APP {
      */
     public static void main(String[] args) {
         Perro p1 = new Perro();
-        p1.setIdPerro("0001");
+        p1.setIdPerro("0004");
         p1.setNombre("pili");
         p1.setRaza("dobermag");
         Perro p2 = new Perro();
@@ -46,7 +46,7 @@ public class APP {
         Perro perroBorrar = new Perro();
         perroBorrar.setIdPerro("0004");
         
-        v1.darDeAlta(perroBorrar);
+        v1.darDeAltaID(perroBorrar);
         
         v1.listarPerros();
         

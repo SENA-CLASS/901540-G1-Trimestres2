@@ -40,10 +40,24 @@ public class Veterinaria{
             if(listaPerros.compareTo(perro)==0){
                 System.out.println("doy de alta al perro en la posicion "+ indice);
                 indiceBorrar=indice;
+                break;
             }
             indice++;
         }
         this.darDeAlta(indiceBorrar);
+    }
+    
+    public void darDeAltaID(Perro perro){
+        List<Perro> listaTemporal = new ArrayList<>();
+        listaTemporal.addAll(perros);
+        for (Perro listaPerros : listaTemporal) {
+            
+            if(listaPerros.compareTo(perro)==0){
+               perros.remove(listaPerros);
+            }
+            
+        }
+        
     }
     
     public void listarPerros(){
