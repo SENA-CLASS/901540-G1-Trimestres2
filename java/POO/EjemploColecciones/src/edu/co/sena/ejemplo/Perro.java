@@ -83,7 +83,7 @@ public class Perro implements Comparable<Perro> {
 //    @Override
 //    public int compareTo(Estudiante o) {
 //       int retoro=0;
-//       if(!(this.tipoDocumento.equals(o.getTipoDocumento) && this.numeroDocumento.equal(o.getNumeroDocumento()))){
+//       if(!(this.tipoDocumento.equals(o.getTipoDocumento) && this.numeroDocumento.equal(o.getNDocumento()))){
 //       retorno=-1;
 //       }
 //       
