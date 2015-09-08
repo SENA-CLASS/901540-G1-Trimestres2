@@ -17,7 +17,10 @@ public class Perro implements Comparable<Perro> {
     private String sexo;
     private String color;
     private int edad;
+    private double valorConsulta;
 
+    
+    
     public String getNombre() {
         return nombre;
     }
@@ -89,5 +92,13 @@ public class Perro implements Comparable<Perro> {
 //       
 //        return retorno;
 //    }
+
+    public double getValorConsulta() {
+        return valorConsulta;
+    }
+
+    public void setValorConsulta(double valorConsulta) {
+        this.valorConsulta = valorConsulta;
+    }
 
 }

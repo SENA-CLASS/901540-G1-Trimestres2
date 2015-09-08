@@ -16,29 +16,36 @@ public class APP {
      */
     public static void main(String[] args) {
         Perro p1 = new Perro();
-        p1.setIdPerro("0004");
+        p1.setIdPerro("0001");
         p1.setNombre("pili");
+        p1.setValorConsulta(20000);
         p1.setRaza("dobermag");
         Perro p2 = new Perro();
+        p2.setValorConsulta(20000);
         p2.setIdPerro("0002");
         p2.setNombre("pili2");
         Perro p3 = new Perro();
         p3.setIdPerro("0003");
         p3.setNombre("pili3");
+        p3.setValorConsulta(20000);
         Perro p4 = new Perro();
         p4.setIdPerro("0004");
         p4.setNombre("pil4");
+        p4.setValorConsulta(20000);
         Perro p5 = new Perro();
         p5.setIdPerro("0005");
         p5.setNombre("pili5");
     
+        p5.setValorConsulta(20000);
         Veterinaria v1 = new Veterinaria();
         v1.hospitalizar(p1);
         v1.hospitalizar(p2);
         v1.hospitalizar(p3);
         v1.hospitalizar(p4);
         v1.hospitalizar(p5);
-    
+        
+        System.out.println(v1.getGanancias());
+        
         v1.listarPerros();
         System.out.println("---------------------");
         

@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class Veterinaria{
     private List<Perro> perros;
+    private double ganancias;
    
 
     public Veterinaria() {
@@ -24,6 +25,15 @@ public class Veterinaria{
     
     public void hospitalizar(Perro perro){
     perros.add(perro);
+    this.calcularGanancias();
+    }
+    
+    private void calcularGanancias(){
+        this.ganancias=0;
+        for (Perro p : perros) {
+            this.ganancias+=p.getValorConsulta();
+        }
+    
     }
     
     public void darDeAlta(int numeroPerro){
@@ -77,6 +87,14 @@ public class Veterinaria{
 
     public void setPerros(List<Perro> perros) {
         this.perros = perros;
+    }
+
+    public double getGanancias() {
+        return ganancias;
+    }
+
+    public void setGanancias(double ganancias) {
+        this.ganancias = ganancias;
     }
     
     
