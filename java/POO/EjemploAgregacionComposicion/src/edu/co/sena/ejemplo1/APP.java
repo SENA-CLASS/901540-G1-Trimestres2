@@ -34,7 +34,7 @@ public class APP {
         
         Caballo caballito2 = new Caballo(c1, cor1, h1, pul2, pul2);
         
-        
+        caballito1.setMontura(new Montura());
         
         
         
